@@ -71,6 +71,16 @@ directive:
   - where:
       verb: Set
     remove: true
+
+  # Remove operation cmdlets
+  - where:
+      subject: Operation*
+    remove: true
+
+    # Remove fault simulation cmdlets, not GA
+  - where:
+      subject: (FaultSimulation$)|(^FaultSimulation)
+    remove: true
   
   # rename client to client certificate for New-AzServiceFabricManagedCluster
   - where:

@@ -26,9 +26,6 @@ Get a Service Fabric application type name resource created or in the process of
 ### [Get-AzServiceFabricManagedClusterApplicationTypeVersion](Get-AzServiceFabricManagedClusterApplicationTypeVersion.md)
 Get a Service Fabric managed application type version resource created or in the process of being created in the Service Fabric managed application type name resource.
 
-### [Get-AzServiceFabricManagedClusterFaultSimulation](Get-AzServiceFabricManagedClusterFaultSimulation.md)
-Gets a fault simulation by the simulationId.
-
 ### [Get-AzServiceFabricManagedClusterService](Get-AzServiceFabricManagedClusterService.md)
 Get a Service Fabric service resource created or in the process of being created in the Service Fabric managed application resource.
 
@@ -41,20 +38,11 @@ Action to get Maintenance Window Status of the Service Fabric Managed Clusters.
 ### [Get-AzServiceFabricManagedNodeType](Get-AzServiceFabricManagedNodeType.md)
 Get a Service Fabric node type of a given managed cluster.
 
-### [Get-AzServiceFabricManagedNodeTypeFaultSimulation](Get-AzServiceFabricManagedNodeTypeFaultSimulation.md)
-Gets a fault simulation by the simulationId.
-
 ### [Get-AzServiceFabricManagedNodeTypeSku](Get-AzServiceFabricManagedNodeTypeSku.md)
 Get a Service Fabric node type supported SKUs.
 
 ### [Get-AzServiceFabricManagedUnsupportedVMSize](Get-AzServiceFabricManagedUnsupportedVMSize.md)
 Get unsupported vm size for Service Fabric Managed Clusters.
-
-### [Get-AzServiceFabricOperationResult](Get-AzServiceFabricOperationResult.md)
-Get long running operation result.
-
-### [Get-AzServiceFabricOperationStatus](Get-AzServiceFabricOperationStatus.md)
-Get long running operation status.
 
 ### [Invoke-AzServiceFabricDeallocateManagedNodeType](Invoke-AzServiceFabricDeallocateManagedNodeType.md)
 Deallocates one or more nodes on the node type.
@@ -124,21 +112,9 @@ This will resume the application upgrade from where it was paused.
 Send a request to start a rollback of the current application upgrade.
 This will start rolling back the application to the previous version.
 
-### [Start-AzServiceFabricManagedClusterFaultSimulation](Start-AzServiceFabricManagedClusterFaultSimulation.md)
-Starts a fault simulation on the cluster.
-
 ### [Start-AzServiceFabricManagedNodeType](Start-AzServiceFabricManagedNodeType.md)
 Starts one or more nodes on the node type.
 It will trigger an allocation of the fabric node if needed and activate them.
-
-### [Start-AzServiceFabricManagedNodeTypeFaultSimulation](Start-AzServiceFabricManagedNodeTypeFaultSimulation.md)
-Starts a fault simulation on the node type.
-
-### [Stop-AzServiceFabricManagedClusterFaultSimulation](Stop-AzServiceFabricManagedClusterFaultSimulation.md)
-Stops a fault simulation on the cluster.
-
-### [Stop-AzServiceFabricManagedNodeTypeFaultSimulation](Stop-AzServiceFabricManagedNodeTypeFaultSimulation.md)
-Stops a fault simulation on the node type.
 
 ### [Update-AzServiceFabricManagedCluster](Update-AzServiceFabricManagedCluster.md)
 Update the tags of of a Service Fabric managed cluster resource with the specified name.
