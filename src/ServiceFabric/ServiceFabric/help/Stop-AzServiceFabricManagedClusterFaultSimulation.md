@@ -15,22 +15,22 @@ Stops a fault simulation on the cluster.
 ### StopExpanded (Default)
 ```
 Stop-AzServiceFabricManagedClusterFaultSimulation -ClusterName <String> -ResourceGroupName <String>
- [-SubscriptionId <String>] -SimulationId <String> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-SubscriptionId <String>] -SimulationId <String> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### StopViaJsonString
 ```
 Stop-AzServiceFabricManagedClusterFaultSimulation -ClusterName <String> -ResourceGroupName <String>
- [-SubscriptionId <String>] -JsonString <String> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-SubscriptionId <String>] -JsonString <String> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### StopViaJsonFilePath
 ```
 Stop-AzServiceFabricManagedClusterFaultSimulation -ClusterName <String> -ResourceGroupName <String>
- [-SubscriptionId <String>] -JsonFilePath <String> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-SubscriptionId <String>] -JsonFilePath <String> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Stop
@@ -43,14 +43,15 @@ Stop-AzServiceFabricManagedClusterFaultSimulation -ClusterName <String> -Resourc
 ### StopViaIdentityExpanded
 ```
 Stop-AzServiceFabricManagedClusterFaultSimulation -InputObject <IServiceFabricIdentity> -SimulationId <String>
- [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### StopViaIdentity
 ```
 Stop-AzServiceFabricManagedClusterFaultSimulation -InputObject <IServiceFabricIdentity>
- -Parameter <IFaultSimulationIdContent> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -Parameter <IFaultSimulationIdContent> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION

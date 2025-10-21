@@ -15,19 +15,22 @@ Remove Service fabric an application type from the cluster. This will remove all
 ### ByResourceGroup (Default)
 ```
 Remove-AzServiceFabricApplicationType [-ResourceGroupName] <String> [-ClusterName] <String> [-Name <String>]
- [-PassThru] [-Force] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Force] [-DefaultProfile <IAzureContextContainer>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### ByResourceId
 ```
 Remove-AzServiceFabricApplicationType -ResourceId <String> [-PassThru] [-Force]
- [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### ByInputObject
 ```
 Remove-AzServiceFabricApplicationType -InputObject <PSApplicationType> [-PassThru] [-Force]
- [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION

@@ -16,21 +16,22 @@ Starts a fault simulation on the cluster.
 ```
 Start-AzServiceFabricManagedClusterFaultSimulation -ClusterName <String> -ResourceGroupName <String>
  [-SubscriptionId <String>] [-ConstraintExpirationTime <DateTime>] [-ParameterForce]
- [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### StartViaJsonString
 ```
 Start-AzServiceFabricManagedClusterFaultSimulation -ClusterName <String> -ResourceGroupName <String>
- [-SubscriptionId <String>] -JsonString <String> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-SubscriptionId <String>] -JsonString <String> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### StartViaJsonFilePath
 ```
 Start-AzServiceFabricManagedClusterFaultSimulation -ClusterName <String> -ResourceGroupName <String>
- [-SubscriptionId <String>] -JsonFilePath <String> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-SubscriptionId <String>] -JsonFilePath <String> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Start
@@ -50,8 +51,8 @@ Start-AzServiceFabricManagedClusterFaultSimulation -InputObject <IServiceFabricI
 ### StartViaIdentity
 ```
 Start-AzServiceFabricManagedClusterFaultSimulation -InputObject <IServiceFabricIdentity>
- -Parameter <IFaultSimulationContentWrapper> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -Parameter <IFaultSimulationContentWrapper> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION

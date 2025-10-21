@@ -30,7 +30,8 @@ Start-AzServiceFabricManagedClusterApplicationRollback -ApplicationName <String>
 ### StartViaIdentity
 ```
 Start-AzServiceFabricManagedClusterApplicationRollback -InputObject <IServiceFabricIdentity>
- [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION

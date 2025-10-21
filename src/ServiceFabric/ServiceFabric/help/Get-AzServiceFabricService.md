@@ -21,12 +21,14 @@ Get-AzServiceFabricService [-ResourceGroupName] <String> [-ClusterName] <String>
 ### ByName
 ```
 Get-AzServiceFabricService [-ResourceGroupName] <String> [-ClusterName] <String> [-ApplicationName] <String>
- [-Name] <String> [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+ [-Name] <String> [-DefaultProfile <IAzureContextContainer>]
+ [<CommonParameters>]
 ```
 
 ### ByResourceId
 ```
-Get-AzServiceFabricService -ResourceId <String> [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+Get-AzServiceFabricService -ResourceId <String> [-DefaultProfile <IAzureContextContainer>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION

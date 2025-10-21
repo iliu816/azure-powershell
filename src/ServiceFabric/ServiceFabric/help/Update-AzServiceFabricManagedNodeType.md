@@ -23,22 +23,23 @@ Update-AzServiceFabricManagedNodeType -ClusterName <String> -Name <String> -Reso
 ### UpdateViaJsonString
 ```
 Update-AzServiceFabricManagedNodeType -ClusterName <String> -Name <String> -ResourceGroupName <String>
- [-SubscriptionId <String>] -JsonString <String> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-SubscriptionId <String>] -JsonString <String> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaJsonFilePath
 ```
 Update-AzServiceFabricManagedNodeType -ClusterName <String> -Name <String> -ResourceGroupName <String>
- [-SubscriptionId <String>] -JsonFilePath <String> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-SubscriptionId <String>] -JsonFilePath <String> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateExpanded
 ```
 Update-AzServiceFabricManagedNodeType -ClusterName <String> -Name <String> -ResourceGroupName <String>
  [-SubscriptionId <String>] [-SkuCapacity <Int32>] [-SkuName <String>] [-SkuTier <String>] [-Tag <Hashtable>]
- [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### ReimageViaJsonString
@@ -79,8 +80,8 @@ Update-AzServiceFabricManagedNodeType -Name <String> -ManagedClusterInputObject 
 ### ReimageViaIdentityManagedCluster
 ```
 Update-AzServiceFabricManagedNodeType -Name <String> -ManagedClusterInputObject <IServiceFabricIdentity>
- -Parameter <INodeTypeActionParameters> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -Parameter <INodeTypeActionParameters> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -93,15 +94,15 @@ Update-AzServiceFabricManagedNodeType -InputObject <IServiceFabricIdentity> [-Sk
 ### ReimageViaIdentityExpanded
 ```
 Update-AzServiceFabricManagedNodeType -InputObject <IServiceFabricIdentity> [-Force] [-Node <String[]>]
- [-UpdateType <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-UpdateType <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ReimageViaIdentity
 ```
 Update-AzServiceFabricManagedNodeType -InputObject <IServiceFabricIdentity>
- -Parameter <INodeTypeActionParameters> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -Parameter <INodeTypeActionParameters> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -110,27 +111,28 @@ It will disable the fabric nodes, trigger a reimage on the VMs and activate the 
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Update Node Type Tags
 ```powershell
-{{ Add code here }}
+$resourceGroupName = "testResourceGroup"
+$clusterName = "testCluster"
+$name = "testName"
+$tag = @{"testKey" = "testValue"}
+Update-AzServiceFabricManagedCluster -ResourceGroupName $resourceGroupName -ClusterName $clusterName -Name $name -Tag $tags
 ```
 
-```output
-{{ Add output here (remove the output block if the example doesn't have an output) }}
-```
+Update node type tags.
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
+### Example 2: Update Node Type Capacity
 ```powershell
-{{ Add code here }}
+$resourceGroupName = "testResourceGroup"
+$clusterName = "testCluster"
+$name = "testName"
+$skuCapacity = 5
+
+Update-AzServiceFabricManagedCluster -ResourceGroupName $resourceGroupName -ClusterName $clusterName -Name $name -SkuCapacity $skuCapacity -Tag $tags
 ```
 
-```output
-{{ Add output here (remove the output block if the example doesn't have an output) }}
-```
-
-{{ Add description here }}
+Update node type tags.
 
 ## PARAMETERS
 

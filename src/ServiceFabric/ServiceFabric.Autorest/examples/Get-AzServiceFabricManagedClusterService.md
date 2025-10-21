@@ -1,22 +1,20 @@
-### Example 1: {{ Add title here }}
+### Example 1: Get Service Details
 ```powershell
-{{ Add code here }}
+$resourceGroupName = "testResourceGroup"
+$clusterName = "testCluster"
+$applicationName = "testApplication"
+$serviceName = "testService"
+Get-AzServiceFabricManagedClusterService -ResourceGroupName $resourceGroupName -ClusterName $clusterName -ApplicationName $applicationName -ServiceName $serviceName
 ```
 
-```output
-{{ Add output here (remove the output block if the example doesn't have an output) }}
-```
+Get service details.
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
+### Example 2: Get Service Details by Application
 ```powershell
-{{ Add code here }}
+$resourceGroupName = "testResourceGroup"
+$clusterName = "testCluster"
+$applicationName = "testApplication"
+Get-AzServiceFabricManagedClusterService -ResourceGroupName $resourceGroupName -ClusterName $clusterName -ApplicationName $applicationName
 ```
 
-```output
-{{ Add output here (remove the output block if the example doesn't have an output) }}
-```
-
-{{ Add description here }}
-
+Get service details under the specified application.

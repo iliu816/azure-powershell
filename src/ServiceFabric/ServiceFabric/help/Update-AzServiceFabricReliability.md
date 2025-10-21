@@ -15,7 +15,8 @@ Update the reliability tier of the primary node type in a cluster.
 ```
 Update-AzServiceFabricReliability [-ResourceGroupName] <String> [-Name] <String>
  -ReliabilityLevel <ReliabilityLevel> [-AutoAddNode] [-NodeType <String>]
- [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION

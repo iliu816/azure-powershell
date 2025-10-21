@@ -75,27 +75,15 @@ It will disable the fabric nodes, trigger a shut down on the VMs, move them to a
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Redeploy Specified Node(s) on NodeType
 ```powershell
-{{ Add code here }}
+$resourceGroupName = "testResourceGroup"
+$clusterName = "testCluster"
+$nodeTypeName = "testNodeType"
+Invoke-AzServiceFabricRedeployManagedNodeType -ResourceGroupName $resourceGroupName -ClusterName $clusterName -NodeTypeName $nodeTypeName -Node testNodeType_0, testNodeType_3
 ```
 
-```output
-{{ Add output here (remove the output block if the example doesn't have an output) }}
-```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-{{ Add code here }}
-```
-
-```output
-{{ Add output here (remove the output block if the example doesn't have an output) }}
-```
-
-{{ Add description here }}
+Redeploy node 0 and 3 on the node type.
 
 ## PARAMETERS
 

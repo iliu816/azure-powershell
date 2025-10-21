@@ -1,22 +1,18 @@
-### Example 1: {{ Add title here }}
+### Example 1: Get Node Type Details
 ```powershell
-{{ Add code here }}
+$resourceGroupName = "testResourceGroup"
+$clusterName = "testCluster"
+$nodeTypeName = "testNodeType"
+Get-AzServiceFabricManagedNodeType -ResourceGroupName $resourceGroupName -ClusterName $clusterName -NodeTypeName $nodeTypeName
 ```
 
-```output
-{{ Add output here (remove the output block if the example doesn't have an output) }}
-```
+Get node type details.
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
+### Example 2: Get Node Type Details by Cluster
 ```powershell
-{{ Add code here }}
+$resourceGroupName = "testResourceGroup"
+$clusterName = "testCluster"
+Get-AzServiceFabricManagedNodeType -ResourceGroupName $resourceGroupName -ClusterName $clusterName
 ```
 
-```output
-{{ Add output here (remove the output block if the example doesn't have an output) }}
-```
-
-{{ Add description here }}
-
+Get node type details under the specified cluster.

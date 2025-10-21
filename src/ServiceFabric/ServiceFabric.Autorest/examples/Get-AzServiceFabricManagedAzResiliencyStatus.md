@@ -1,22 +1,8 @@
-### Example 1: {{ Add title here }}
+### Example 1: Get Zone Resiliency Status
 ```powershell
-{{ Add code here }}
+$resourceGroupName = "testResourceGroup"
+$clusterName = "testCluster"
+Get-AzServiceFabricManagedAzResiliencyStatus -ResourceGroupName $resourceGroupName -ClusterName $clusterName
 ```
 
-```output
-{{ Add output here (remove the output block if the example doesn't have an output) }}
-```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-{{ Add code here }}
-```
-
-```output
-{{ Add output here (remove the output block if the example doesn't have an output) }}
-```
-
-{{ Add description here }}
-
+Get the availability zone resiliency status for the specified cluster.

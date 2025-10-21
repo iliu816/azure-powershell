@@ -15,13 +15,15 @@ Get Service Fabric application type version details. Only supports ARM deployed 
 ### ByResourceGroupAndCluster (Default)
 ```
 Get-AzServiceFabricApplicationTypeVersion [-ResourceGroupName] <String> [-ClusterName] <String>
- [-Name] <String> [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+ [-Name] <String> [-DefaultProfile <IAzureContextContainer>]
+ [<CommonParameters>]
 ```
 
 ### ByVersion
 ```
 Get-AzServiceFabricApplicationTypeVersion [-ResourceGroupName] <String> [-ClusterName] <String>
- [-Name] <String> [-Version] <String> [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+ [-Name] <String> [-Version] <String> [-DefaultProfile <IAzureContextContainer>]
+ [<CommonParameters>]
 ```
 
 ### ByResourceId

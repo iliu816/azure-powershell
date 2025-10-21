@@ -1,22 +1,22 @@
-### Example 1: {{ Add title here }}
+### Example 1: Update Node Type Tags
 ```powershell
-{{ Add code here }}
+$resourceGroupName = "testResourceGroup"
+$clusterName = "testCluster"
+$name = "testName"
+$tag = @{"testKey" = "testValue"}
+Update-AzServiceFabricManagedCluster -ResourceGroupName $resourceGroupName -ClusterName $clusterName -Name $name -Tag $tags
 ```
 
-```output
-{{ Add output here (remove the output block if the example doesn't have an output) }}
-```
+Update node type tags.
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
+### Example 2: Update Node Type Capacity
 ```powershell
-{{ Add code here }}
+$resourceGroupName = "testResourceGroup"
+$clusterName = "testCluster"
+$name = "testName"
+$skuCapacity = 5
+
+Update-AzServiceFabricManagedCluster -ResourceGroupName $resourceGroupName -ClusterName $clusterName -Name $name -SkuCapacity $skuCapacity -Tag $tags
 ```
 
-```output
-{{ Add output here (remove the output block if the example doesn't have an output) }}
-```
-
-{{ Add description here }}
-
+Update node type tags.

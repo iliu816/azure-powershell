@@ -30,7 +30,8 @@ Read-AzServiceFabricManagedClusterApplicationUpgrade -ApplicationName <String>
 ### ReadViaIdentity
 ```
 Read-AzServiceFabricManagedClusterApplicationUpgrade -InputObject <IServiceFabricIdentity>
- [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION

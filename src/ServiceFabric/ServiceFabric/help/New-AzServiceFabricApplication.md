@@ -17,7 +17,8 @@ Create new service fabric application under the specified resource group and clu
 New-AzServiceFabricApplication [-ResourceGroupName] <String> [-ClusterName] <String>
  [-ApplicationTypeName] <String> [-ApplicationTypeVersion] <String> -Name <String>
  [-ApplicationParameter <Hashtable>] [-MinimumNodeCount <Int64>] [-MaximumNodeCount <Int64>] [-Force]
- [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CreateAppTypeVersion
@@ -25,8 +26,8 @@ New-AzServiceFabricApplication [-ResourceGroupName] <String> [-ClusterName] <Str
 New-AzServiceFabricApplication [-ResourceGroupName] <String> [-ClusterName] <String>
  [-ApplicationTypeName] <String> [-ApplicationTypeVersion] <String> -Name <String>
  [-ApplicationParameter <Hashtable>] -PackageUrl <String> [-MinimumNodeCount <Int64>]
- [-MaximumNodeCount <Int64>] [-Force] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-MaximumNodeCount <Int64>] [-Force] [-DefaultProfile <IAzureContextContainer>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION

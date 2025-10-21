@@ -19,7 +19,8 @@ Set-AzServiceFabricManagedClusterService [-ResourceGroupName] <String> [-Cluster
  [-MinInstancePercentage <Int32>] [-DefaultMoveCost <MoveCostEnum>] [-PlacementConstraint <String>]
  [-Metric <PSServiceMetric[]>] [-Correlation <PSServiceCorrelation[]>]
  [-ServicePackageActivationMode <ServicePackageActivationModeEnum>] [-Tag <Hashtable>] [-Force] [-AsJob]
- [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Stateful-ByResourceGroup
@@ -31,7 +32,8 @@ Set-AzServiceFabricManagedClusterService [-ResourceGroupName] <String> [-Cluster
  [-ServicePlacementTimeLimit <TimeSpan>] [-DefaultMoveCost <MoveCostEnum>] [-PlacementConstraint <String>]
  [-Metric <PSServiceMetric[]>] [-Correlation <PSServiceCorrelation[]>]
  [-ServicePackageActivationMode <ServicePackageActivationModeEnum>] [-Tag <Hashtable>] [-Force] [-AsJob]
- [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Stateless-ByResourceId
@@ -40,7 +42,8 @@ Set-AzServiceFabricManagedClusterService -ResourceId <String> [-Stateless] [-Ins
  [-MinInstanceCount <Int32>] [-MinInstancePercentage <Int32>] [-DefaultMoveCost <MoveCostEnum>]
  [-PlacementConstraint <String>] [-Metric <PSServiceMetric[]>] [-Correlation <PSServiceCorrelation[]>]
  [-ServicePackageActivationMode <ServicePackageActivationModeEnum>] [-Tag <Hashtable>] [-Force] [-AsJob]
- [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Stateful-ByResourceId
@@ -51,7 +54,8 @@ Set-AzServiceFabricManagedClusterService -ResourceId <String> [-Stateful] [-Targ
  [-ServicePlacementTimeLimit <TimeSpan>] [-DefaultMoveCost <MoveCostEnum>] [-PlacementConstraint <String>]
  [-Metric <PSServiceMetric[]>] [-Correlation <PSServiceCorrelation[]>]
  [-ServicePackageActivationMode <ServicePackageActivationModeEnum>] [-Tag <Hashtable>] [-Force] [-AsJob]
- [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Stateless-ByInputObject
@@ -60,7 +64,8 @@ Set-AzServiceFabricManagedClusterService -InputObject <PSManagedService> [-State
  [-MinInstanceCount <Int32>] [-MinInstancePercentage <Int32>] [-DefaultMoveCost <MoveCostEnum>]
  [-PlacementConstraint <String>] [-Metric <PSServiceMetric[]>] [-Correlation <PSServiceCorrelation[]>]
  [-ServicePackageActivationMode <ServicePackageActivationModeEnum>] [-Tag <Hashtable>] [-Force] [-AsJob]
- [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Stateful-ByInputObject
@@ -71,8 +76,8 @@ Set-AzServiceFabricManagedClusterService -InputObject <PSManagedService> [-State
  [-StandByReplicaKeepDuration <TimeSpan>] [-ServicePlacementTimeLimit <TimeSpan>]
  [-DefaultMoveCost <MoveCostEnum>] [-PlacementConstraint <String>] [-Metric <PSServiceMetric[]>]
  [-Correlation <PSServiceCorrelation[]>] [-ServicePackageActivationMode <ServicePackageActivationModeEnum>]
- [-Tag <Hashtable>] [-Force] [-AsJob] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Tag <Hashtable>] [-Force] [-AsJob] [-DefaultProfile <IAzureContextContainer>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION

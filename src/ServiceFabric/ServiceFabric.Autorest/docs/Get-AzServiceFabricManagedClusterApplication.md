@@ -41,27 +41,24 @@ Get a Service Fabric managed application resource created or in the process of b
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1:  Get Application Details
 ```powershell
-{{ Add code here }}
+$resourceGroupName = "testResourceGroup"
+$clusterName = "testCluster"
+$applicationName = "testApplication"
+Get-AzServiceFabricManagedClusterApplication -ResourceGroupName $resourceGroupName -ClusterName $clusterName -ApplicationName $applicationName
 ```
 
-```output
-{{ Add output here (remove the output block if the example doesn't have an output) }}
-```
+Get application details.
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
+### Example 2: Get Applications by Cluster
 ```powershell
-{{ Add code here }}
+$resourceGroupName = "testResourceGroup"
+$clusterName = "testCluster"
+Get-AzServiceFabricManagedClusterApplication -ResourceGroupName $resourceGroupName -ClusterName $clusterName
 ```
 
-```output
-{{ Add output here (remove the output block if the example doesn't have an output) }}
-```
-
-{{ Add description here }}
+Get list of applications under specified cluster.
 
 ## PARAMETERS
 

@@ -24,7 +24,8 @@ Set-AzServiceFabricManagedClusterApplication [-ResourceGroupName] <String> [-Clu
  [-DefaultServiceTypeMaxPercentUnhealthyReplicasPerPartition <Int32>]
  [-DefaultServiceTypeUnhealthyServicesMaxPercent <Int32>] [-UnhealthyDeployedApplicationsMaxPercent <Int32>]
  [-ServiceTypeHealthPolicyMap <Hashtable>] [-Tag <Hashtable>] [-Force] [-AsJob]
- [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### ByResourceId
@@ -39,7 +40,8 @@ Set-AzServiceFabricManagedClusterApplication [[-ApplicationTypeVersion] <String>
  [-DefaultServiceTypeMaxPercentUnhealthyReplicasPerPartition <Int32>]
  [-DefaultServiceTypeUnhealthyServicesMaxPercent <Int32>] [-UnhealthyDeployedApplicationsMaxPercent <Int32>]
  [-ServiceTypeHealthPolicyMap <Hashtable>] [-Tag <Hashtable>] -ResourceId <String> [-Force] [-AsJob]
- [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### ByInputObject
@@ -54,7 +56,8 @@ Set-AzServiceFabricManagedClusterApplication [[-ApplicationTypeVersion] <String>
  [-DefaultServiceTypeMaxPercentUnhealthyReplicasPerPartition <Int32>]
  [-DefaultServiceTypeUnhealthyServicesMaxPercent <Int32>] [-UnhealthyDeployedApplicationsMaxPercent <Int32>]
  [-ServiceTypeHealthPolicyMap <Hashtable>] [-Tag <Hashtable>] -InputObject <PSManagedApplication> [-Force]
- [-AsJob] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AsJob] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION

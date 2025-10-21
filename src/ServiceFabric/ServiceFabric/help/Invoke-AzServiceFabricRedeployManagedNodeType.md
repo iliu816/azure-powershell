@@ -1,5 +1,5 @@
 ---
-external help file: Az.ServiceFabric-help.xml
+external help file: Microsoft.Azure.PowerShell.Cmdlets.ServiceFabric.dll-help.xml
 Module Name: Az.ServiceFabric
 online version: https://learn.microsoft.com/powershell/module/az.servicefabric/invoke-azservicefabricredeploymanagednodetype
 schema: 2.0.0
@@ -15,58 +15,62 @@ It will disable the fabric nodes, trigger a shut down on the VMs, move them to a
 
 ### RedeployExpanded (Default)
 ```
-Invoke-AzServiceFabricRedeployManagedNodeType -ClusterName <String> -NodeTypeName <String>
- -ResourceGroupName <String> [-SubscriptionId <String>] [-Force] [-Node <String[]>] [-UpdateType <String>]
- [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-AzServiceFabricRedeployManagedNodeType [-ClusterName] <String> -NodeTypeName <String>
+ [-ResourceGroupName] <String> [-SubscriptionId <String>] [-Force] [-Node <String[]>] [-UpdateType <String>]
+ [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### RedeployViaJsonString
 ```
-Invoke-AzServiceFabricRedeployManagedNodeType -ClusterName <String> -NodeTypeName <String>
- -ResourceGroupName <String> [-SubscriptionId <String>] -JsonString <String> [-DefaultProfile <PSObject>]
+Invoke-AzServiceFabricRedeployManagedNodeType [-ClusterName] <String> -NodeTypeName <String>
+ [-ResourceGroupName] <String> [-SubscriptionId <String>] -JsonString <String> [-DefaultProfile <PSObject>]
  [-AsJob] [-NoWait] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### RedeployViaJsonFilePath
 ```
-Invoke-AzServiceFabricRedeployManagedNodeType -ClusterName <String> -NodeTypeName <String>
- -ResourceGroupName <String> [-SubscriptionId <String>] -JsonFilePath <String> [-DefaultProfile <PSObject>]
+Invoke-AzServiceFabricRedeployManagedNodeType [-ClusterName] <String> -NodeTypeName <String>
+ [-ResourceGroupName] <String> [-SubscriptionId <String>] -JsonFilePath <String> [-DefaultProfile <PSObject>]
  [-AsJob] [-NoWait] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Redeploy
 ```
-Invoke-AzServiceFabricRedeployManagedNodeType -ClusterName <String> -NodeTypeName <String>
- -ResourceGroupName <String> [-SubscriptionId <String>] -Parameter <INodeTypeActionParameters>
- [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-AzServiceFabricRedeployManagedNodeType [-ClusterName] <String> -NodeTypeName <String>
+ [-ResourceGroupName] <String> [-SubscriptionId <String>] -Parameter <INodeTypeActionParameters>
+ [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### RedeployViaIdentityManagedClusterExpanded
 ```
 Invoke-AzServiceFabricRedeployManagedNodeType -NodeTypeName <String>
  -ManagedClusterInputObject <IServiceFabricIdentity> [-Force] [-Node <String[]>] [-UpdateType <String>]
- [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### RedeployViaIdentityManagedCluster
 ```
 Invoke-AzServiceFabricRedeployManagedNodeType -NodeTypeName <String>
  -ManagedClusterInputObject <IServiceFabricIdentity> -Parameter <INodeTypeActionParameters>
- [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### RedeployViaIdentityExpanded
 ```
 Invoke-AzServiceFabricRedeployManagedNodeType -InputObject <IServiceFabricIdentity> [-Force] [-Node <String[]>]
- [-UpdateType <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-UpdateType <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### RedeployViaIdentity
 ```
 Invoke-AzServiceFabricRedeployManagedNodeType -InputObject <IServiceFabricIdentity>
- -Parameter <INodeTypeActionParameters> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -Parameter <INodeTypeActionParameters> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -75,27 +79,15 @@ It will disable the fabric nodes, trigger a shut down on the VMs, move them to a
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Redeploy Specified Node(s) on NodeType
 ```powershell
-{{ Add code here }}
+$resourceGroupName = "testResourceGroup"
+$clusterName = "testCluster"
+$nodeTypeName = "testNodeType"
+Invoke-AzServiceFabricRedeployManagedNodeType -ResourceGroupName $resourceGroupName -ClusterName $clusterName -NodeTypeName $nodeTypeName -Node testNodeType_0, testNodeType_3
 ```
 
-```output
-{{ Add output here (remove the output block if the example doesn't have an output) }}
-```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-{{ Add code here }}
-```
-
-```output
-{{ Add output here (remove the output block if the example doesn't have an output) }}
-```
-
-{{ Add description here }}
+Redeploy node 0 and 3 on the node type.
 
 ## PARAMETERS
 
@@ -123,7 +115,7 @@ Parameter Sets: RedeployExpanded, RedeployViaJsonString, RedeployViaJsonFilePath
 Aliases:
 
 Required: True
-Position: Named
+Position: 1
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
@@ -306,7 +298,7 @@ Parameter Sets: RedeployExpanded, RedeployViaJsonString, RedeployViaJsonFilePath
 Aliases:
 
 Required: True
-Position: Named
+Position: 0
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False

@@ -36,21 +36,22 @@ Update-AzServiceFabricManagedClusterApplicationTypeVersion -ApplicationTypeName 
 ### UpdateViaIdentityManagedClusterExpanded
 ```
 Update-AzServiceFabricManagedClusterApplicationTypeVersion -ApplicationTypeName <String> -Version <String>
- -ManagedClusterInputObject <IServiceFabricIdentity> [-Tag <Hashtable>] [-DefaultProfile <PSObject>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -ManagedClusterInputObject <IServiceFabricIdentity> [-Tag <Hashtable>] [-DefaultProfile <PSObject>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityApplicationTypeExpanded
 ```
 Update-AzServiceFabricManagedClusterApplicationTypeVersion -Version <String>
- -ApplicationTypeInputObject <IServiceFabricIdentity> [-Tag <Hashtable>] [-DefaultProfile <PSObject>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -ApplicationTypeInputObject <IServiceFabricIdentity> [-Tag <Hashtable>] [-DefaultProfile <PSObject>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-AzServiceFabricManagedClusterApplicationTypeVersion -InputObject <IServiceFabricIdentity>
- [-Tag <Hashtable>] [-DefaultProfile <PSObject>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Tag <Hashtable>] [-DefaultProfile <PSObject>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -58,27 +59,17 @@ Update the tags of an application type version resource of a given managed clust
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Update Application Type Version Tags
 ```powershell
-{{ Add code here }}
+$resourceGroupName = "testResourceGroup"
+$clusterName = "testCluster"
+$applicationTypeName = "testApplicationTypeName"
+$version = "testVersion"
+$tag = @{"testKey" = "testValue"}
+Update-AzServiceFabricManagedClusterApplicationTypeVersion -ResourceGroupName $resourceGroupName -ClusterName $clusterName -ApplicationTypeName $applicationTypeName -Version $version -Tag $tags
 ```
 
-```output
-{{ Add output here (remove the output block if the example doesn't have an output) }}
-```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-{{ Add code here }}
-```
-
-```output
-{{ Add output here (remove the output block if the example doesn't have an output) }}
-```
-
-{{ Add description here }}
+Update application type version tags.
 
 ## PARAMETERS
 

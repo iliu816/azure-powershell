@@ -75,27 +75,15 @@ It will disable the fabric nodes, trigger a delete on the VMs and removes the st
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Remove Specified Node(s) from Node Type
 ```powershell
-{{ Add code here }}
+$resourceGroupName = "testResourceGroup"
+$clusterName = "testCluster"
+$nodeTypeName = "testNodeType"
+Remove-AzServiceFabricManagedNodeTypeNode -ResourceGroupName $resourceGroupName -ClusterName $clusterName -NodeTypeName $nodeTypeName -Node testNodeType_0, testNodeType_3
 ```
 
-```output
-{{ Add output here (remove the output block if the example doesn't have an output) }}
-```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-{{ Add code here }}
-```
-
-```output
-{{ Add output here (remove the output block if the example doesn't have an output) }}
-```
-
-{{ Add description here }}
+Removed specified nodes from specified node type.
 
 ## PARAMETERS
 

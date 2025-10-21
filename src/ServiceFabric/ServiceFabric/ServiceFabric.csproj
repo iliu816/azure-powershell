@@ -40,5 +40,6 @@
   </ItemGroup>
 
   <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory).., build.proj))\src\Az.Post.props" />
+  <Import Project="$(MSBuildThisFileDirectory)..\..\psm1.props" />
 
 </Project>

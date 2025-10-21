@@ -1,22 +1,20 @@
-### Example 1: {{ Add title here }}
+### Example 1:  Get Application Type Version Details
 ```powershell
-{{ Add code here }}
+$resourceGroupName = "testResourceGroup"
+$clusterName = "testCluster"
+$applicationTypeName = "testApplicationType"
+$version = "testVersion"
+Get-AzServiceFabricManagedClusterApplicationTypeVersion -ResourceGroupName $resourceGroupName -ClusterName $clusterName -ApplicationTypeName $applicationTypeName -Version $version
 ```
 
-```output
-{{ Add output here (remove the output block if the example doesn't have an output) }}
-```
+Get application type version details.
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
+### Example 2: Get Application Type Versions by Application Type
 ```powershell
-{{ Add code here }}
+$resourceGroupName = "testResourceGroup"
+$clusterName = "testCluster"
+$applicationTypeName = "testApplicationType"
+Get-AzServiceFabricManagedClusterApplicationTypeVersion -ResourceGroupName $resourceGroupName -ClusterName $clusterName -ApplicationTypeName $applicationTypeName
 ```
 
-```output
-{{ Add output here (remove the output block if the example doesn't have an output) }}
-```
-
-{{ Add description here }}
-
+Get list of application type versions under specified application type.

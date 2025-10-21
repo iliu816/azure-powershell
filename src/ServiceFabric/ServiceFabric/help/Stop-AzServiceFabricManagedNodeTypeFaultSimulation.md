@@ -37,7 +37,8 @@ Stop-AzServiceFabricManagedNodeTypeFaultSimulation -ClusterName <String> -NodeTy
 ```
 Stop-AzServiceFabricManagedNodeTypeFaultSimulation -ClusterName <String> -NodeTypeName <String>
  -ResourceGroupName <String> [-SubscriptionId <String>] -Parameter <IFaultSimulationIdContent>
- [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### StopViaIdentityManagedClusterExpanded
@@ -51,20 +52,22 @@ Stop-AzServiceFabricManagedNodeTypeFaultSimulation -NodeTypeName <String>
 ```
 Stop-AzServiceFabricManagedNodeTypeFaultSimulation -NodeTypeName <String>
  -ManagedClusterInputObject <IServiceFabricIdentity> -Parameter <IFaultSimulationIdContent>
- [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### StopViaIdentityExpanded
 ```
 Stop-AzServiceFabricManagedNodeTypeFaultSimulation -InputObject <IServiceFabricIdentity> -SimulationId <String>
- [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### StopViaIdentity
 ```
 Stop-AzServiceFabricManagedNodeTypeFaultSimulation -InputObject <IServiceFabricIdentity>
- -Parameter <IFaultSimulationIdContent> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -Parameter <IFaultSimulationIdContent> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION

@@ -51,22 +51,22 @@ Restart-AzServiceFabricManagedNodeType [-Name] <String> -ManagedClusterInputObje
 ### RestartViaIdentityManagedCluster
 ```
 Restart-AzServiceFabricManagedNodeType [-Name] <String> -ManagedClusterInputObject <IServiceFabricIdentity>
- -Parameter <INodeTypeActionParameters> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -Parameter <INodeTypeActionParameters> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### RestartViaIdentityExpanded
 ```
 Restart-AzServiceFabricManagedNodeType -InputObject <IServiceFabricIdentity> [-Force] [-Node <String[]>]
- [-UpdateType <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-UpdateType <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### RestartViaIdentity
 ```
 Restart-AzServiceFabricManagedNodeType -InputObject <IServiceFabricIdentity>
- -Parameter <INodeTypeActionParameters> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -Parameter <INodeTypeActionParameters> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -75,27 +75,15 @@ It will disable the fabric nodes, trigger a restart on the VMs and activate the 
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Restart Specified Node(s) on NodeType
 ```powershell
-{{ Add code here }}
+$resourceGroupName = "testResourceGroup"
+$clusterName = "testCluster"
+$nodeTypeName = "testNodeType"
+Restart-AzServiceFabricManagedNodeType -ResourceGroupName $resourceGroupName -ClusterName $clusterName -NodeTypeName $nodeTypeName -Node testNodeType_0, testNodeType_3
 ```
 
-```output
-{{ Add output here (remove the output block if the example doesn't have an output) }}
-```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-{{ Add code here }}
-```
-
-```output
-{{ Add output here (remove the output block if the example doesn't have an output) }}
-```
-
-{{ Add description here }}
+Restart node 0 and 3 on the node type.
 
 ## PARAMETERS
 
@@ -258,7 +246,6 @@ Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
-Required: False
 Required: False
 Position: Named
 Default value: None

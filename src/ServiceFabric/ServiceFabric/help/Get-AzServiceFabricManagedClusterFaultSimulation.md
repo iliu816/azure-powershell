@@ -15,35 +15,36 @@ Gets a fault simulation by the simulationId.
 ### List (Default)
 ```
 Get-AzServiceFabricManagedClusterFaultSimulation -ClusterName <String> -ResourceGroupName <String>
- [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### GetViaJsonString
 ```
 Get-AzServiceFabricManagedClusterFaultSimulation -ClusterName <String> -ResourceGroupName <String>
- [-SubscriptionId <String[]>] -JsonString <String> [-DefaultProfile <PSObject>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-SubscriptionId <String[]>] -JsonString <String> [-DefaultProfile <PSObject>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### GetViaJsonFilePath
 ```
 Get-AzServiceFabricManagedClusterFaultSimulation -ClusterName <String> -ResourceGroupName <String>
- [-SubscriptionId <String[]>] -JsonFilePath <String> [-DefaultProfile <PSObject>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-SubscriptionId <String[]>] -JsonFilePath <String> [-DefaultProfile <PSObject>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### GetExpanded
 ```
 Get-AzServiceFabricManagedClusterFaultSimulation -ClusterName <String> -ResourceGroupName <String>
- [-SubscriptionId <String[]>] -SimulationId <String> [-DefaultProfile <PSObject>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-SubscriptionId <String[]>] -SimulationId <String> [-DefaultProfile <PSObject>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-AzServiceFabricManagedClusterFaultSimulation -ClusterName <String> -ResourceGroupName <String>
- [-SubscriptionId <String[]>] -Parameter <IFaultSimulationIdContent> [-DefaultProfile <PSObject>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-SubscriptionId <String[]>] -Parameter <IFaultSimulationIdContent> [-DefaultProfile <PSObject>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### GetViaIdentityExpanded
@@ -55,7 +56,8 @@ Get-AzServiceFabricManagedClusterFaultSimulation -InputObject <IServiceFabricIde
 ### GetViaIdentity
 ```
 Get-AzServiceFabricManagedClusterFaultSimulation -InputObject <IServiceFabricIdentity>
- -Parameter <IFaultSimulationIdContent> [-DefaultProfile <PSObject>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -Parameter <IFaultSimulationIdContent> [-DefaultProfile <PSObject>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION

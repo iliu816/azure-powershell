@@ -15,7 +15,8 @@ Update the cluster resource vmImage setting which maps the appropriate runtime p
 
 ```
 Update-AzServiceFabricVmImage [-ResourceGroupName] <String> [-Name] <String> -VmImage <VmImageKind>
- [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION

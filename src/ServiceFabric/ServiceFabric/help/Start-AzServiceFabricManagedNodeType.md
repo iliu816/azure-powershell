@@ -1,5 +1,5 @@
 ---
-external help file: Az.ServiceFabric-help.xml
+external help file: Microsoft.Azure.PowerShell.Cmdlets.ServiceFabric.dll-help.xml
 Module Name: Az.ServiceFabric
 online version: https://learn.microsoft.com/powershell/module/az.servicefabric/start-azservicefabricmanagednodetype
 schema: 2.0.0
@@ -15,58 +15,58 @@ It will trigger an allocation of the fabric node if needed and activate them.
 
 ### StartExpanded (Default)
 ```
-Start-AzServiceFabricManagedNodeType -ClusterName <String> -Name <String> -ResourceGroupName <String>
+Start-AzServiceFabricManagedNodeType [-ClusterName] <String> [-Name] <String> [-ResourceGroupName] <String>
  [-SubscriptionId <String>] [-Force] [-Node <String[]>] [-UpdateType <String>] [-DefaultProfile <PSObject>]
  [-AsJob] [-NoWait] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### StartViaJsonString
 ```
-Start-AzServiceFabricManagedNodeType -ClusterName <String> -Name <String> -ResourceGroupName <String>
+Start-AzServiceFabricManagedNodeType [-ClusterName] <String> [-Name] <String> [-ResourceGroupName] <String>
  [-SubscriptionId <String>] -JsonString <String> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### StartViaJsonFilePath
 ```
-Start-AzServiceFabricManagedNodeType -ClusterName <String> -Name <String> -ResourceGroupName <String>
+Start-AzServiceFabricManagedNodeType [-ClusterName] <String> [-Name] <String> [-ResourceGroupName] <String>
  [-SubscriptionId <String>] -JsonFilePath <String> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Start
 ```
-Start-AzServiceFabricManagedNodeType -ClusterName <String> -Name <String> -ResourceGroupName <String>
+Start-AzServiceFabricManagedNodeType [-ClusterName] <String> [-Name] <String> [-ResourceGroupName] <String>
  [-SubscriptionId <String>] -Parameter <INodeTypeActionParameters> [-DefaultProfile <PSObject>] [-AsJob]
  [-NoWait] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### StartViaIdentityManagedClusterExpanded
 ```
-Start-AzServiceFabricManagedNodeType -Name <String> -ManagedClusterInputObject <IServiceFabricIdentity>
+Start-AzServiceFabricManagedNodeType [-Name] <String> -ManagedClusterInputObject <IServiceFabricIdentity>
  [-Force] [-Node <String[]>] [-UpdateType <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### StartViaIdentityManagedCluster
 ```
-Start-AzServiceFabricManagedNodeType -Name <String> -ManagedClusterInputObject <IServiceFabricIdentity>
- -Parameter <INodeTypeActionParameters> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Start-AzServiceFabricManagedNodeType [-Name] <String> -ManagedClusterInputObject <IServiceFabricIdentity>
+ -Parameter <INodeTypeActionParameters> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### StartViaIdentityExpanded
 ```
 Start-AzServiceFabricManagedNodeType -InputObject <IServiceFabricIdentity> [-Force] [-Node <String[]>]
- [-UpdateType <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-UpdateType <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### StartViaIdentity
 ```
 Start-AzServiceFabricManagedNodeType -InputObject <IServiceFabricIdentity>
- -Parameter <INodeTypeActionParameters> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -Parameter <INodeTypeActionParameters> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -75,27 +75,15 @@ It will trigger an allocation of the fabric node if needed and activate them.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Start Specified Node(s) on NodeType
 ```powershell
-{{ Add code here }}
+$resourceGroupName = "testResourceGroup"
+$clusterName = "testCluster"
+$nodeTypeName = "testNodeType"
+Start-AzServiceFabricManagedNodeType -ResourceGroupName $resourceGroupName -ClusterName $clusterName -NodeTypeName $nodeTypeName -Node BE_0, BE_3
 ```
 
-```output
-{{ Add output here (remove the output block if the example doesn't have an output) }}
-```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-{{ Add code here }}
-```
-
-```output
-{{ Add output here (remove the output block if the example doesn't have an output) }}
-```
-
-{{ Add description here }}
+Start node 0 and 3 on the node type.
 
 ## PARAMETERS
 
@@ -123,7 +111,7 @@ Parameter Sets: StartExpanded, StartViaJsonString, StartViaJsonFilePath, Start
 Aliases:
 
 Required: True
-Position: Named
+Position: 1
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
@@ -229,7 +217,7 @@ Parameter Sets: StartExpanded, StartViaJsonString, StartViaJsonFilePath, Start, 
 Aliases: NodeTypeName
 
 Required: True
-Position: Named
+Position: 2
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
@@ -306,7 +294,7 @@ Parameter Sets: StartExpanded, StartViaJsonString, StartViaJsonFilePath, Start
 Aliases:
 
 Required: True
-Position: Named
+Position: 0
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False

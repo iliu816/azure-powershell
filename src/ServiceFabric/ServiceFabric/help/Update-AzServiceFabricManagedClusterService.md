@@ -36,14 +36,15 @@ Update-AzServiceFabricManagedClusterService -ApplicationName <String> -ClusterNa
 ### UpdateViaIdentityManagedClusterExpanded
 ```
 Update-AzServiceFabricManagedClusterService -ApplicationName <String> -Name <String>
- -ManagedClusterInputObject <IServiceFabricIdentity> [-Tag <Hashtable>] [-DefaultProfile <PSObject>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -ManagedClusterInputObject <IServiceFabricIdentity> [-Tag <Hashtable>] [-DefaultProfile <PSObject>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityApplicationExpanded
 ```
 Update-AzServiceFabricManagedClusterService -Name <String> -ApplicationInputObject <IServiceFabricIdentity>
- [-Tag <Hashtable>] [-DefaultProfile <PSObject>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Tag <Hashtable>] [-DefaultProfile <PSObject>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -57,27 +58,17 @@ Update the tags of a service resource of a given managed cluster.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Update Service Tags
 ```powershell
-{{ Add code here }}
+$resourceGroupName = "testResourceGroup"
+$clusterName = "testCluster"
+$applicationName = "testApplicationName"
+$name = "testName"
+$tag = @{"testKey" = "testValue"}
+Update-AzServiceFabricManagedClusterService -ResourceGroupName $resourceGroupName -ClusterName $clusterName -ApplicationName $applicationName -Name $name -Tag $tags
 ```
 
-```output
-{{ Add output here (remove the output block if the example doesn't have an output) }}
-```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-{{ Add code here }}
-```
-
-```output
-{{ Add output here (remove the output block if the example doesn't have an output) }}
-```
-
-{{ Add description here }}
+Update service tags.
 
 ## PARAMETERS
 

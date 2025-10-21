@@ -1,22 +1,16 @@
-### Example 1: {{ Add title here }}
+### Example 1: List Unsupported VM Sizes
 ```powershell
-{{ Add code here }}
+$location = "southcentralus"
+Get-AzServiceFabricManagedUnsupportedVmSize -Location $location
 ```
 
-```output
-{{ Add output here (remove the output block if the example doesn't have an output) }}
-```
+Get the lists of unsupported VM sizes for Service Fabric Managed Clusters.
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
+### Example 2: Get Unsupported VM Size
 ```powershell
-{{ Add code here }}
+$vmSize = "Standard_B8s_v2"
+$location = "southcentralus"
+Get-AzServiceFabricManagedUnsupportedVmSize -Location $location -VMSize $vmSize
 ```
 
-```output
-{{ Add output here (remove the output block if the example doesn't have an output) }}
-```
-
-{{ Add description here }}
-
+Get unsupported VM Size for Service Fabric Managed Clusters.

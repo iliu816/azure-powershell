@@ -15,14 +15,15 @@ Remove a client certificate(s) or certificate subject(s) name(s) from being used
 ### SingleUpdateWithCommonName
 ```
 Remove-AzServiceFabricClientCertificate [-ResourceGroupName] <String> [-Name] <String> -CommonName <String>
- -IssuerThumbprint <String> [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -IssuerThumbprint <String> [-DefaultProfile <IAzureContextContainer>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SingleUpdateWithThumbprint
 ```
 Remove-AzServiceFabricClientCertificate [-ResourceGroupName] <String> [-Name] <String> -Thumbprint <String>
- [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### MultipleUpdatesWithCommonName
@@ -36,7 +37,8 @@ Remove-AzServiceFabricClientCertificate [-ResourceGroupName] <String> [-Name] <S
 ```
 Remove-AzServiceFabricClientCertificate [-ResourceGroupName] <String> [-Name] <String>
  [-AdminClientThumbprint <String[]>] [-ReadonlyClientThumbprint <String[]>]
- [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION

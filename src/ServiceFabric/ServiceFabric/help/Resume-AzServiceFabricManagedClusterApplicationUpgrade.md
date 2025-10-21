@@ -17,7 +17,8 @@ This will resume the application upgrade from where it was paused.
 ```
 Resume-AzServiceFabricManagedClusterApplicationUpgrade -ApplicationName <String> -ClusterName <String>
  -ResourceGroupName <String> [-SubscriptionId <String>] [-UpgradeDomainName <String>]
- [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### ResumeViaJsonString
@@ -45,21 +46,23 @@ Resume-AzServiceFabricManagedClusterApplicationUpgrade -ApplicationName <String>
 ```
 Resume-AzServiceFabricManagedClusterApplicationUpgrade -ApplicationName <String>
  -ManagedClusterInputObject <IServiceFabricIdentity> -Parameter <IRuntimeResumeApplicationUpgradeParameters>
- [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Resume
 ```
 Resume-AzServiceFabricManagedClusterApplicationUpgrade -ApplicationName <String> -ClusterName <String>
  -ResourceGroupName <String> [-SubscriptionId <String>] -Parameter <IRuntimeResumeApplicationUpgradeParameters>
- [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### ResumeViaIdentityExpanded
 ```
 Resume-AzServiceFabricManagedClusterApplicationUpgrade -InputObject <IServiceFabricIdentity>
- [-UpgradeDomainName <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-UpgradeDomainName <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ResumeViaIdentity

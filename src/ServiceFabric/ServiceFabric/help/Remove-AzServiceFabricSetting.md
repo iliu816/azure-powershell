@@ -15,7 +15,8 @@ Remove one or multiple Service Fabric setting from the cluster.
 ### OneSetting
 ```
 Remove-AzServiceFabricSetting [-ResourceGroupName] <String> [-Name] <String> -Section <String>
- -Parameter <String> [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -Parameter <String> [-DefaultProfile <IAzureContextContainer>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### BatchSettings

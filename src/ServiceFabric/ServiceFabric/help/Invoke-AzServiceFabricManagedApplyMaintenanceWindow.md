@@ -16,13 +16,15 @@ Any pending post will be applied.
 ### Post (Default)
 ```
 Invoke-AzServiceFabricManagedApplyMaintenanceWindow -ClusterName <String> -ResourceGroupName <String>
- [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### PostViaIdentity
 ```
 Invoke-AzServiceFabricManagedApplyMaintenanceWindow -InputObject <IServiceFabricIdentity>
- [-DefaultProfile <PSObject>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DefaultProfile <PSObject>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION

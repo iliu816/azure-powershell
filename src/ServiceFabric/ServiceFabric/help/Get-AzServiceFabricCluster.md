@@ -14,7 +14,8 @@ Get the cluster resource details.
 
 ### BySubscription (Default)
 ```
-Get-AzServiceFabricCluster [-DefaultProfile <IAzureContextContainer>] [<CommonParameters>]
+Get-AzServiceFabricCluster [-DefaultProfile <IAzureContextContainer>]
+ [<CommonParameters>]
 ```
 
 ### ByResourceGroup

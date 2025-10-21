@@ -15,8 +15,8 @@ Gets a fault simulation by the simulationId.
 ### List (Default)
 ```
 Get-AzServiceFabricManagedNodeTypeFaultSimulation -ClusterName <String> -NodeTypeName <String>
- -ResourceGroupName <String> [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -ResourceGroupName <String> [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### GetViaJsonString
@@ -70,7 +70,8 @@ Get-AzServiceFabricManagedNodeTypeFaultSimulation -InputObject <IServiceFabricId
 ### GetViaIdentity
 ```
 Get-AzServiceFabricManagedNodeTypeFaultSimulation -InputObject <IServiceFabricIdentity>
- -Parameter <IFaultSimulationIdContent> [-DefaultProfile <PSObject>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -Parameter <IFaultSimulationIdContent> [-DefaultProfile <PSObject>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION

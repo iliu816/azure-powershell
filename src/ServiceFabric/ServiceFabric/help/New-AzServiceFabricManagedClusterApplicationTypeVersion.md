@@ -16,36 +16,40 @@ Create a Service Fabric managed application type version resource with the speci
 ```
 New-AzServiceFabricManagedClusterApplicationTypeVersion [-Version] <String> -ApplicationTypeName <String>
  [-ClusterName] <String> [-ResourceGroupName] <String> [-SubscriptionId <String>] [-AppPackageUrl <String>]
- [-Location <String>] [-Tag <Hashtable>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Location <String>] [-Tag <Hashtable>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaJsonString
 ```
 New-AzServiceFabricManagedClusterApplicationTypeVersion [-Version] <String> -ApplicationTypeName <String>
  [-ClusterName] <String> [-ResourceGroupName] <String> [-SubscriptionId <String>] -JsonString <String>
- [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CreateViaJsonFilePath
 ```
 New-AzServiceFabricManagedClusterApplicationTypeVersion [-Version] <String> -ApplicationTypeName <String>
  [-ClusterName] <String> [-ResourceGroupName] <String> [-SubscriptionId <String>] -JsonFilePath <String>
- [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CreateViaIdentityManagedClusterExpanded
 ```
 New-AzServiceFabricManagedClusterApplicationTypeVersion [-Version] <String> -ApplicationTypeName <String>
  -ManagedClusterInputObject <IServiceFabricIdentity> [-AppPackageUrl <String>] [-Location <String>]
- [-Tag <Hashtable>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Tag <Hashtable>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityApplicationTypeExpanded
 ```
 New-AzServiceFabricManagedClusterApplicationTypeVersion [-Version] <String>
  -ApplicationTypeInputObject <IServiceFabricIdentity> [-AppPackageUrl <String>] [-Location <String>]
- [-Tag <Hashtable>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Tag <Hashtable>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -53,27 +57,18 @@ Create a Service Fabric managed application type version resource with the speci
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1:  Create Application Type Version
 ```powershell
-{{ Add code here }}
+$location = "testLocation"
+$resourceGroupName = "testResourceGroup"
+$clusterName = "testCluster"
+$applicationTypeName = "testApplicationType"
+$version = "testVersion"
+$appPackageUrl = "testAppPackageUrl"
+New-AzServiceFabricManagedClusterApplicationTypeVersion -Location $location -ResourceGroupName $resourceGroupName -ClusterName $clusterName -ApplicationTypeName $applicationTypeName -Version $version -AppPackageUrl $appPackageUrl
 ```
 
-```output
-{{ Add output here (remove the output block if the example doesn't have an output) }}
-```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-{{ Add code here }}
-```
-
-```output
-{{ Add output here (remove the output block if the example doesn't have an output) }}
-```
-
-{{ Add description here }}
+Create new application type version.
 
 ## PARAMETERS
 

@@ -104,6 +104,9 @@ Any pending post will be applied.
 Redeploys one or more nodes on the node type.
 It will disable the fabric nodes, trigger a shut down on the VMs, move them to a new node, and power them back on.
 
+### [Invoke-AzServiceFabricReimageManagedNodeType](Invoke-AzServiceFabricReimageManagedNodeType.md)
+Reimage nodes from the node type.
+
 ### [New-AzServiceFabricApplication](New-AzServiceFabricApplication.md)
 Create new service fabric application under the specified resource group and cluster.
 

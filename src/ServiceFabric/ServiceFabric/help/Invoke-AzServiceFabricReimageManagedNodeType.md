@@ -15,7 +15,8 @@ Reimage nodes from the node type.
 ```
 Invoke-AzServiceFabricReimageManagedNodeType [-ResourceGroupName] <String> [-ClusterName] <String>
  [-Name] <String> [-NodeName <String[]>] [-UpdateType <String>] [-ForceReimage] [-PassThru] [-AsJob]
- [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION

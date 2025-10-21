@@ -15,8 +15,8 @@ Delete a Service Fabric managed cluster resource with the specified name.
 ### Delete (Default)
 ```
 Remove-AzServiceFabricManagedCluster -ClusterName <String> [-ResourceGroupName] <String>
- [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
@@ -30,27 +30,15 @@ Delete a Service Fabric managed cluster resource with the specified name.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Removed Cluster
 ```powershell
-{{ Add code here }}
+$resourceGroupName = "testResourceGroup"
+$clusterName = "testCluster"
+Remove-AzServiceFabricManagedCluster -ResourceGroupName $resourceGroupName -ClusterName $clusterName
 ```
 
-```output
-{{ Add output here (remove the output block if the example doesn't have an output) }}
-```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-{{ Add code here }}
-```
-
-```output
-{{ Add output here (remove the output block if the example doesn't have an output) }}
-```
-
-{{ Add description here }}
+Remove the cluster.
+This will delete the cluster.
 
 ## PARAMETERS
 

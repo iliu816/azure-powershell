@@ -15,13 +15,15 @@ Get a Service Fabric node type of a given managed cluster.
 ### List (Default)
 ```
 Get-AzServiceFabricManagedNodeType [-ClusterName] <String> [-ResourceGroupName] <String>
- [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
+ [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>]
+ [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-AzServiceFabricManagedNodeType [-ClusterName] <String> -Name <String> [-ResourceGroupName] <String>
- [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
+ [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentityManagedCluster
@@ -41,27 +43,24 @@ Get a Service Fabric node type of a given managed cluster.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Get Node Type Details
 ```powershell
-{{ Add code here }}
+$resourceGroupName = "testResourceGroup"
+$clusterName = "testCluster"
+$nodeTypeName = "testNodeType"
+Get-AzServiceFabricManagedNodeType -ResourceGroupName $resourceGroupName -ClusterName $clusterName -NodeTypeName $nodeTypeName
 ```
 
-```output
-{{ Add output here (remove the output block if the example doesn't have an output) }}
-```
+Get node type details.
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
+### Example 2: Get Node Type Details by Cluster
 ```powershell
-{{ Add code here }}
+$resourceGroupName = "testResourceGroup"
+$clusterName = "testCluster"
+Get-AzServiceFabricManagedNodeType -ResourceGroupName $resourceGroupName -ClusterName $clusterName
 ```
 
-```output
-{{ Add output here (remove the output block if the example doesn't have an output) }}
-```
-
-{{ Add description here }}
+Get node type details under the specified cluster.
 
 ## PARAMETERS
 

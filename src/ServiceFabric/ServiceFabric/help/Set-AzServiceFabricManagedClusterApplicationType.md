@@ -15,20 +15,22 @@ Update a service fabric managed application type. This allows you to update the 
 ### ByResourceGroup (Default)
 ```
 Set-AzServiceFabricManagedClusterApplicationType [-ResourceGroupName] <String> [-ClusterName] <String>
- [-Name <String>] [-Tag <Hashtable>] [-Force] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Name <String>] [-Tag <Hashtable>] [-Force] [-DefaultProfile <IAzureContextContainer>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ByInputObject
 ```
 Set-AzServiceFabricManagedClusterApplicationType [-Tag <Hashtable>] -InputObject <PSManagedApplicationType>
- [-Force] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Force] [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### ByResourceId
 ```
 Set-AzServiceFabricManagedClusterApplicationType [-Tag <Hashtable>] -ResourceId <String> [-Force]
- [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION

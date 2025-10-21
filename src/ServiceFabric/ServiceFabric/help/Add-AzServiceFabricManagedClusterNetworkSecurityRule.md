@@ -18,7 +18,8 @@ Add-AzServiceFabricManagedClusterNetworkSecurityRule [-InputObject] <PSManagedCl
  -Access <NetworkSecurityAccess> [-Description <String>] -DestinationAddressPrefix <String[]>
  -DestinationPortRange <String[]> -Direction <NetworkSecurityDirection> -Name <String> -Priority <Int32>
  -Protocol <NetworkSecurityProtocol> -SourceAddressPrefix <String[]> -SourcePortRange <String[]> [-AsJob]
- [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### ByName
@@ -27,7 +28,8 @@ Add-AzServiceFabricManagedClusterNetworkSecurityRule [-ResourceGroupName] <Strin
  -Access <NetworkSecurityAccess> [-Description <String>] -DestinationAddressPrefix <String[]>
  -DestinationPortRange <String[]> -Direction <NetworkSecurityDirection> -Name <String> -Priority <Int32>
  -Protocol <NetworkSecurityProtocol> -SourceAddressPrefix <String[]> -SourcePortRange <String[]> [-AsJob]
- [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION

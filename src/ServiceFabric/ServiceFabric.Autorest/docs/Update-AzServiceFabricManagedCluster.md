@@ -42,27 +42,15 @@ Update the tags of of a Service Fabric managed cluster resource with the specifi
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Update Cluster Tags
 ```powershell
-{{ Add code here }}
+$resourceGroupName = "testResourceGroup"
+$clusterName = "testCluster"
+$tag = @{"testKey" = "testValue"}
+Update-AzServiceFabricManagedCluster -ResourceGroupName $resourceGroupName -ClusterName $clusterName -Tag $tags
 ```
 
-```output
-{{ Add output here (remove the output block if the example doesn't have an output) }}
-```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-{{ Add code here }}
-```
-
-```output
-{{ Add output here (remove the output block if the example doesn't have an output) }}
-```
-
-{{ Add description here }}
+Update managed cluster tags.
 
 ## PARAMETERS
 

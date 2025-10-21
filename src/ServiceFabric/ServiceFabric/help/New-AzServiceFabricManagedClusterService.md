@@ -20,7 +20,8 @@ New-AzServiceFabricManagedClusterService [-Name] <String> [-ApplicationName] <St
  [-PlacementConstraint <String>] [-ScalingPolicy <IScalingPolicy[]>] [-ServiceDnsName <String>]
  [-ServiceKind <String>] [-ServiceLoadMetric <IServiceLoadMetric[]>] [-ServicePackageActivationMode <String>]
  [-ServicePlacementPolicy <IServicePlacementPolicy[]>] [-ServiceTypeName <String>] [-Tag <Hashtable>]
- [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CreateViaJsonString
@@ -45,7 +46,8 @@ New-AzServiceFabricManagedClusterService [-Name] <String> [-ApplicationName] <St
  [-PlacementConstraint <String>] [-ScalingPolicy <IScalingPolicy[]>] [-ServiceDnsName <String>]
  [-ServiceKind <String>] [-ServiceLoadMetric <IServiceLoadMetric[]>] [-ServicePackageActivationMode <String>]
  [-ServicePlacementPolicy <IServicePlacementPolicy[]>] [-ServiceTypeName <String>] [-Tag <Hashtable>]
- [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CreateViaIdentityApplicationExpanded
@@ -56,7 +58,8 @@ New-AzServiceFabricManagedClusterService [-Name] <String> -ApplicationInputObjec
  [-ScalingPolicy <IScalingPolicy[]>] [-ServiceDnsName <String>] [-ServiceKind <String>]
  [-ServiceLoadMetric <IServiceLoadMetric[]>] [-ServicePackageActivationMode <String>]
  [-ServicePlacementPolicy <IServicePlacementPolicy[]>] [-ServiceTypeName <String>] [-Tag <Hashtable>]
- [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -64,27 +67,20 @@ Create a Service Fabric managed service resource with the specified name.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1:  Create Service
 ```powershell
-{{ Add code here }}
+$location = "testLocation"
+$resourceGroupName = "testResourceGroup"
+$clusterName = "testCluster"
+$applicationName = "testApplicationName"
+$serviceKind = "Stateless"
+$serviceTypeName = "testServiceType"
+$serviceName = "testService"
+$partitionDescriptionPartitionScheme
+New-AzServiceFabricManagedClusterService -Location $location -ResourceGroupName $resourceGroupName -ClusterName $clusterName -ApplicationName $applicationName -ServiceKind $serviceKind -ServiceTypeName $serviceTypeName -ServiceName $serviceName
 ```
 
-```output
-{{ Add output here (remove the output block if the example doesn't have an output) }}
-```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-{{ Add code here }}
-```
-
-```output
-{{ Add output here (remove the output block if the example doesn't have an output) }}
-```
-
-{{ Add description here }}
+Create new service.
 
 ## PARAMETERS
 

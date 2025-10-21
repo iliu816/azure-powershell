@@ -14,7 +14,8 @@ Get a Service Fabric node type supported SKUs.
 
 ```
 Get-AzServiceFabricManagedNodeTypeSku -ClusterName <String> -NodeTypeName <String> -ResourceGroupName <String>
- [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [<CommonParameters>]
+ [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -22,27 +23,15 @@ Get a Service Fabric node type supported SKUs.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Get Node Type Supported Skus
 ```powershell
-{{ Add code here }}
+$resourceGroupName = "testResourceGroup"
+$clusterName = "testCluster"
+$nodeTypeName = "testNodeType"
+Get-AzServiceFabricManagedNodeTypeSku -ResourceGroupName $resourceGroupName -ClusterName $clusterName -NodeTypeName $nodeTypeName
 ```
 
-```output
-{{ Add output here (remove the output block if the example doesn't have an output) }}
-```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-{{ Add code here }}
-```
-
-```output
-{{ Add output here (remove the output block if the example doesn't have an output) }}
-```
-
-{{ Add description here }}
+Get a Service Fabric node type supported SKUs.
 
 ## PARAMETERS
 

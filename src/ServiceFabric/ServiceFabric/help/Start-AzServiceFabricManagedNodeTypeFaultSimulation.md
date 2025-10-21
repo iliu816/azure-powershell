@@ -16,7 +16,8 @@ Starts a fault simulation on the node type.
 ```
 Start-AzServiceFabricManagedNodeTypeFaultSimulation -ClusterName <String> -NodeTypeName <String>
  -ResourceGroupName <String> [-SubscriptionId <String>] [-ConstraintExpirationTime <DateTime>]
- [-ParameterForce] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ParameterForce] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### StartViaJsonString
@@ -37,21 +38,24 @@ Start-AzServiceFabricManagedNodeTypeFaultSimulation -ClusterName <String> -NodeT
 ```
 Start-AzServiceFabricManagedNodeTypeFaultSimulation -ClusterName <String> -NodeTypeName <String>
  -ResourceGroupName <String> [-SubscriptionId <String>] -Parameter <IFaultSimulationContentWrapper>
- [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### StartViaIdentityManagedClusterExpanded
 ```
 Start-AzServiceFabricManagedNodeTypeFaultSimulation -NodeTypeName <String>
  -ManagedClusterInputObject <IServiceFabricIdentity> [-ConstraintExpirationTime <DateTime>] [-ParameterForce]
- [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### StartViaIdentityManagedCluster
 ```
 Start-AzServiceFabricManagedNodeTypeFaultSimulation -NodeTypeName <String>
  -ManagedClusterInputObject <IServiceFabricIdentity> -Parameter <IFaultSimulationContentWrapper>
- [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### StartViaIdentityExpanded
@@ -64,8 +68,8 @@ Start-AzServiceFabricManagedNodeTypeFaultSimulation -InputObject <IServiceFabric
 ### StartViaIdentity
 ```
 Start-AzServiceFabricManagedNodeTypeFaultSimulation -InputObject <IServiceFabricIdentity>
- -Parameter <IFaultSimulationContentWrapper> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -Parameter <IFaultSimulationContentWrapper> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION

@@ -15,7 +15,8 @@ Action to get Maintenance Window Status of the Service Fabric Managed Clusters.
 ### Get (Default)
 ```
 Get-AzServiceFabricManagedMaintenanceWindowStatus -ClusterName <String> -ResourceGroupName <String>
- [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SubscriptionId <String[]>] [-DefaultProfile <PSObject>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### GetViaIdentity

@@ -41,27 +41,29 @@ Get a Service Fabric managed cluster resource created or in the process of being
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Get Cluster Details
 ```powershell
-{{ Add code here }}
+$resourceGroupName = "testResourceGroup"
+$clusterName = "testCluster"
+Get-AzServiceFabricManagedCluster -ResourceGroupName $resourceGroupName -ClusterName $clusterName
 ```
 
-```output
-{{ Add output here (remove the output block if the example doesn't have an output) }}
-```
+Get cluster details.
 
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
+### Example 2: Get Cluster Details by Resource Group
 ```powershell
-{{ Add code here }}
+$resourceGroupName = "testResourceGroup"
+Get-AzServiceFabricManagedCluster -ResourceGroupName $resourceGroupName
 ```
 
-```output
-{{ Add output here (remove the output block if the example doesn't have an output) }}
+Get list of clusters under the specified resource group.
+
+### Example 2: Get Cluster Details by Subscription
+```powershell
+Get-AzServiceFabricManagedCluster
 ```
 
-{{ Add description here }}
+Get list of clusters under the current subscription.
 
 ## PARAMETERS
 

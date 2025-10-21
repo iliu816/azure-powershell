@@ -14,7 +14,8 @@ Update a node type within the cluster.
 
 ```
 Update-AzServiceFabricNodeType [-ResourceGroupName] <String> [-Name] <String> [-IsPrimaryNodeType <Boolean>]
- -NodeType <String> [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -NodeType <String> [-DefaultProfile <IAzureContextContainer>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION

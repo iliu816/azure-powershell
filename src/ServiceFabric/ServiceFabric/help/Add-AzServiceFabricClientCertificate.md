@@ -15,14 +15,15 @@ Add common name or thumbprint to the cluster for client authentication purposes.
 ### SingleUpdateWithThumbprint
 ```
 Add-AzServiceFabricClientCertificate [-Admin] [-ResourceGroupName] <String> [-Name] <String>
- -Thumbprint <String> [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -Thumbprint <String> [-DefaultProfile <IAzureContextContainer>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### SingleUpdateWithCommonName
 ```
 Add-AzServiceFabricClientCertificate [-Admin] [-ResourceGroupName] <String> [-Name] <String>
- -CommonName <String> -IssuerThumbprint <String> [-DefaultProfile <IAzureContextContainer>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -CommonName <String> -IssuerThumbprint <String> [-DefaultProfile <IAzureContextContainer>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### MultipleUpdatesWithCommonName
@@ -36,7 +37,8 @@ Add-AzServiceFabricClientCertificate [-ResourceGroupName] <String> [-Name] <Stri
 ```
 Add-AzServiceFabricClientCertificate [-ResourceGroupName] <String> [-Name] <String>
  [-AdminClientThumbprint <String[]>] [-ReadonlyClientThumbprint <String[]>]
- [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DefaultProfile <IAzureContextContainer>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
