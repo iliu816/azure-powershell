@@ -76,27 +76,17 @@ This will resume the application upgrade from where it was paused.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Resume Application Upgrade
 ```powershell
-{{ Add code here }}
+$resourceGroupName = "testResourceGroup"
+$clusterName = "testCluster"
+$version = "testVersionResourceId"
+$applicationName = "testApplicationName"
+$upgradeDomainName = "10"
+Resume-AzServiceFabricManagedClusterApplicationUpgrade -ResourceGroupName $resourceGroupName -ClusterName $clusterName -ApplicationName $applicationName -UpgradeDomainName $upgradeDomainName
 ```
 
-```output
-{{ Add output here (remove the output block if the example doesn't have an output) }}
-```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-{{ Add code here }}
-```
-
-```output
-{{ Add output here (remove the output block if the example doesn't have an output) }}
-```
-
-{{ Add description here }}
+If the application upgrade mode is manual, resumes the upgrade in the specified UD.
 
 ## PARAMETERS
 

@@ -29,27 +29,14 @@ Action to get Maintenance Window Status of the Service Fabric Managed Clusters.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Get Maintenance Windows Status
 ```powershell
-{{ Add code here }}
+$resourceGroupName = "testResourceGroup"
+$clusterName = "testCluster"
+Get-AzServiceFabricManagedMaintenanceWindowStatus -ResourceGroupName $resourceGroupName -ClusterName $clusterName
 ```
 
-```output
-{{ Add output here (remove the output block if the example doesn't have an output) }}
-```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-{{ Add code here }}
-```
-
-```output
-{{ Add output here (remove the output block if the example doesn't have an output) }}
-```
-
-{{ Add description here }}
+Get the maintenance windows status for the specified cluster.
 
 ## PARAMETERS
 

@@ -77,7 +77,7 @@ directive:
       subject: Operation*
     remove: true
 
-    # Remove fault simulation cmdlets, not GA
+  # Remove fault simulation cmdlets, not GA
   - where:
       subject: (FaultSimulation$)|(^FaultSimulation)
     remove: true

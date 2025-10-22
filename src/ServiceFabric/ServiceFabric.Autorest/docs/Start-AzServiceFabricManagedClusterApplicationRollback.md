@@ -39,27 +39,17 @@ This will start rolling back the application to the previous version.
 
 ## EXAMPLES
 
-### Example 1: {{ Add title here }}
+### Example 1: Start Application Upgrade Rollback
 ```powershell
-{{ Add code here }}
+$resourceGroupName = "testResourceGroup"
+$clusterName = "testCluster"
+$version = "testVersionResourceId"
+$applicationName = "testApplicationName"
+Start-AzServiceFabricManagedClusterApplicationRollback -ResourceGroupName $resourceGroupName -ClusterName $clusterName -ApplicationName $applicationName
 ```
 
-```output
-{{ Add output here (remove the output block if the example doesn't have an output) }}
-```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-{{ Add code here }}
-```
-
-```output
-{{ Add output here (remove the output block if the example doesn't have an output) }}
-```
-
-{{ Add description here }}
+Attempts to initiate a rollback of the current ongoing application upgrade.
+If there is no upgrade in progress, this operation will not do anything.
 
 ## PARAMETERS
 

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Azure.PowerShell.Cmdlets.ServiceFabric.dll-help.xml
+external help file: Az.ServiceFabric-help.xml
 Module Name: Az.ServiceFabric
 online version: https://learn.microsoft.com/powershell/module/az.servicefabric/get-azservicefabricmanagednodetype
 schema: 2.0.0

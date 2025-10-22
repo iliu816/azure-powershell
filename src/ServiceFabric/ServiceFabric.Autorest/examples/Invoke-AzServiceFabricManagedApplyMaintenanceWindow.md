@@ -1,22 +1,8 @@
-### Example 1: {{ Add title here }}
+### Example 1: Apply Maintenance Windows
 ```powershell
-{{ Add code here }}
+$resourceGroupName = "testResourceGroup"
+$clusterName = "testCluster"
+Invoke-AzServiceFabricManagedApplyMaintenanceWindow -ResourceGroupName $resourceGroupName -ClusterName $clusterName
 ```
 
-```output
-{{ Add output here (remove the output block if the example doesn't have an output) }}
-```
-
-{{ Add description here }}
-
-### Example 2: {{ Add title here }}
-```powershell
-{{ Add code here }}
-```
-
-```output
-{{ Add output here (remove the output block if the example doesn't have an output) }}
-```
-
-{{ Add description here }}
-
+Apply a maintenance windows for the specified cluster right now.
