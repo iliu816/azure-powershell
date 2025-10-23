@@ -90,6 +90,15 @@ directive:
     set:
       parameter-name: ClientCertificate
 
+  # rename cmdlet for reimage node type parameters
+  - where:
+      verb: Update
+      subject: NodeType
+      variant: (^Reimage)
+    set:
+      verb: Invoke
+      subject-prefix: ServiceFabricReimage
+
   # rename cmdlet with Cluster subject to ManagedCluster
   - where:
       subject: (^Cluster$)

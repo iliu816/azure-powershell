@@ -1,6 +1,6 @@
 ---
 Module Name: Az.ServiceFabric
-Module Guid: 31377058-b9cd-4c10-a091-e298a871ce45
+Module Guid: 6a245862-743c-4054-b3c6-71453d64b39b
 Download Help Link: https://learn.microsoft.com/powershell/module/az.servicefabric
 Help Version: 1.0.0.0
 Locale: en-US
