@@ -56,6 +56,10 @@ Any pending post will be applied.
 Redeploys one or more nodes on the node type.
 It will disable the fabric nodes, trigger a shut down on the VMs, move them to a new node, and power them back on.
 
+### [Invoke-AzServiceFabricReimageManagedNodeType](Invoke-AzServiceFabricReimageManagedNodeType.md)
+Reimages one or more nodes on the node type.
+It will disable the fabric nodes, trigger a reimage on the VMs and activate the nodes back again.
+
 ### [New-AzServiceFabricManagedCluster](New-AzServiceFabricManagedCluster.md)
 Create a Service Fabric managed cluster resource with the specified name.
 
@@ -132,6 +136,5 @@ Update the tags of an application type version resource of a given managed clust
 Update the tags of a service resource of a given managed cluster.
 
 ### [Update-AzServiceFabricManagedNodeType](Update-AzServiceFabricManagedNodeType.md)
-Reimages one or more nodes on the node type.
-It will disable the fabric nodes, trigger a reimage on the VMs and activate the nodes back again.
+Update the configuration of a node type of a given managed cluster, only updating tags.
 

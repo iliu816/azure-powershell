@@ -16,7 +16,7 @@ $clusterName = "testCluster"
 $name = "testName"
 $skuCapacity = 5
 
-Update-AzServiceFabricManagedCluster -ResourceGroupName $resourceGroupName -ClusterName $clusterName -Name $name -SkuCapacity $skuCapacity -Tag $tags
+Update-AzServiceFabricManagedCluster -ResourceGroupName $resourceGroupName -ClusterName $clusterName -Name $name -SkuCapacity $skuCapacity
 ```
 
 Update node type tags.

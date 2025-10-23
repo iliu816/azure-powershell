@@ -1,5 +1,5 @@
 ---
-external help file: Az.ServiceFabric-help.xml
+external help file:
 Module Name: Az.ServiceFabric
 online version: https://learn.microsoft.com/powershell/module/az.servicefabric/invoke-azservicefabricreimagemanagednodetype
 schema: 2.0.0
@@ -15,62 +15,58 @@ It will disable the fabric nodes, trigger a reimage on the VMs and activate the 
 
 ### ReimageExpanded (Default)
 ```
-Invoke-AzServiceFabricReimageManagedNodeType [-ClusterName] <String> [-Name] <String>
- [-ResourceGroupName] <String> [-SubscriptionId <String>] [-Force] [-Node <String[]>] [-UpdateType <String>]
- [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### ReimageViaJsonString
-```
-Invoke-AzServiceFabricReimageManagedNodeType [-ClusterName] <String> [-Name] <String>
- [-ResourceGroupName] <String> [-SubscriptionId <String>] -JsonString <String> [-DefaultProfile <PSObject>]
- [-AsJob] [-NoWait] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### ReimageViaJsonFilePath
-```
-Invoke-AzServiceFabricReimageManagedNodeType [-ClusterName] <String> [-Name] <String>
- [-ResourceGroupName] <String> [-SubscriptionId <String>] -JsonFilePath <String> [-DefaultProfile <PSObject>]
- [-AsJob] [-NoWait] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-AzServiceFabricReimageManagedNodeType -ClusterName <String> -Name <String> -ResourceGroupName <String>
+ [-SubscriptionId <String>] [-Force] [-Node <String[]>] [-UpdateType <String>] [-DefaultProfile <PSObject>]
+ [-AsJob] [-NoWait] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Reimage
 ```
-Invoke-AzServiceFabricReimageManagedNodeType [-ClusterName] <String> [-Name] <String>
- [-ResourceGroupName] <String> [-SubscriptionId <String>] -Parameter <INodeTypeActionParameters>
- [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### ReimageViaIdentityManagedClusterExpanded
-```
-Invoke-AzServiceFabricReimageManagedNodeType [-Name] <String>
- -ManagedClusterInputObject <IServiceFabricIdentity> [-Force] [-Node <String[]>] [-UpdateType <String>]
- [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### ReimageViaIdentityManagedCluster
-```
-Invoke-AzServiceFabricReimageManagedNodeType [-Name] <String>
- -ManagedClusterInputObject <IServiceFabricIdentity> -Parameter <INodeTypeActionParameters>
- [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### ReimageViaIdentityExpanded
-```
-Invoke-AzServiceFabricReimageManagedNodeType -InputObject <IServiceFabricIdentity> [-Force] [-Node <String[]>]
- [-UpdateType <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-AzServiceFabricReimageManagedNodeType -ClusterName <String> -Name <String> -ResourceGroupName <String>
+ -Parameter <INodeTypeActionParameters> [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-AsJob]
+ [-NoWait] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### ReimageViaIdentity
 ```
 Invoke-AzServiceFabricReimageManagedNodeType -InputObject <IServiceFabricIdentity>
- -Parameter <INodeTypeActionParameters> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -Parameter <INodeTypeActionParameters> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
+```
+
+### ReimageViaIdentityExpanded
+```
+Invoke-AzServiceFabricReimageManagedNodeType -InputObject <IServiceFabricIdentity> [-Force] [-Node <String[]>]
+ [-UpdateType <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### ReimageViaIdentityManagedCluster
+```
+Invoke-AzServiceFabricReimageManagedNodeType -ManagedClusterInputObject <IServiceFabricIdentity>
+ -Name <String> -Parameter <INodeTypeActionParameters> [-DefaultProfile <PSObject>] [-AsJob] [-NoWait]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### ReimageViaIdentityManagedClusterExpanded
+```
+Invoke-AzServiceFabricReimageManagedNodeType -ManagedClusterInputObject <IServiceFabricIdentity>
+ -Name <String> [-Force] [-Node <String[]>] [-UpdateType <String>] [-DefaultProfile <PSObject>] [-AsJob]
+ [-NoWait] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### ReimageViaJsonFilePath
+```
+Invoke-AzServiceFabricReimageManagedNodeType -ClusterName <String> -Name <String> -ResourceGroupName <String>
+ -JsonFilePath <String> [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### ReimageViaJsonString
+```
+Invoke-AzServiceFabricReimageManagedNodeType -ClusterName <String> -Name <String> -ResourceGroupName <String>
+ -JsonString <String> [-SubscriptionId <String>] [-DefaultProfile <PSObject>] [-AsJob] [-NoWait] [-PassThru]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -134,11 +130,11 @@ The name of the cluster resource.
 
 ```yaml
 Type: System.String
-Parameter Sets: ReimageExpanded, ReimageViaJsonString, ReimageViaJsonFilePath, Reimage
+Parameter Sets: Reimage, ReimageExpanded, ReimageViaJsonFilePath, ReimageViaJsonString
 Aliases:
 
 Required: True
-Position: 1
+Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
@@ -165,7 +161,7 @@ Force the action to go through.
 
 ```yaml
 Type: System.Management.Automation.SwitchParameter
-Parameter Sets: ReimageExpanded, ReimageViaIdentityManagedClusterExpanded, ReimageViaIdentityExpanded
+Parameter Sets: ReimageExpanded, ReimageViaIdentityExpanded, ReimageViaIdentityManagedClusterExpanded
 Aliases:
 
 Required: False
@@ -180,7 +176,7 @@ Identity Parameter
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ServiceFabric.Models.IServiceFabricIdentity
-Parameter Sets: ReimageViaIdentityExpanded, ReimageViaIdentity
+Parameter Sets: ReimageViaIdentity, ReimageViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -225,7 +221,7 @@ Identity Parameter
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ServiceFabric.Models.IServiceFabricIdentity
-Parameter Sets: ReimageViaIdentityManagedClusterExpanded, ReimageViaIdentityManagedCluster
+Parameter Sets: ReimageViaIdentityManagedCluster, ReimageViaIdentityManagedClusterExpanded
 Aliases:
 
 Required: True
@@ -240,11 +236,11 @@ The name of the node type.
 
 ```yaml
 Type: System.String
-Parameter Sets: ReimageExpanded, ReimageViaJsonString, ReimageViaJsonFilePath, Reimage, ReimageViaIdentityManagedClusterExpanded, ReimageViaIdentityManagedCluster
+Parameter Sets: Reimage, ReimageExpanded, ReimageViaIdentityManagedCluster, ReimageViaIdentityManagedClusterExpanded, ReimageViaJsonFilePath, ReimageViaJsonString
 Aliases: NodeTypeName
 
 Required: True
-Position: 2
+Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
@@ -255,7 +251,7 @@ List of node names from the node type.
 
 ```yaml
 Type: System.String[]
-Parameter Sets: ReimageExpanded, ReimageViaIdentityManagedClusterExpanded, ReimageViaIdentityExpanded
+Parameter Sets: ReimageExpanded, ReimageViaIdentityExpanded, ReimageViaIdentityManagedClusterExpanded
 Aliases:
 
 Required: False
@@ -286,7 +282,7 @@ If nodes are not specified on the parameters, the operation will be performed in
 
 ```yaml
 Type: Microsoft.Azure.PowerShell.Cmdlets.ServiceFabric.Models.INodeTypeActionParameters
-Parameter Sets: Reimage, ReimageViaIdentityManagedCluster, ReimageViaIdentity
+Parameter Sets: Reimage, ReimageViaIdentity, ReimageViaIdentityManagedCluster
 Aliases:
 
 Required: True
@@ -317,11 +313,11 @@ The name is case insensitive.
 
 ```yaml
 Type: System.String
-Parameter Sets: ReimageExpanded, ReimageViaJsonString, ReimageViaJsonFilePath, Reimage
+Parameter Sets: Reimage, ReimageExpanded, ReimageViaJsonFilePath, ReimageViaJsonString
 Aliases:
 
 Required: True
-Position: 0
+Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
@@ -332,7 +328,7 @@ The ID of the target subscription.
 
 ```yaml
 Type: System.String
-Parameter Sets: ReimageExpanded, ReimageViaJsonString, ReimageViaJsonFilePath, Reimage
+Parameter Sets: Reimage, ReimageExpanded, ReimageViaJsonFilePath, ReimageViaJsonString
 Aliases:
 
 Required: False
@@ -347,7 +343,7 @@ Specifies the way the operation will be performed.
 
 ```yaml
 Type: System.String
-Parameter Sets: ReimageExpanded, ReimageViaIdentityManagedClusterExpanded, ReimageViaIdentityExpanded
+Parameter Sets: ReimageExpanded, ReimageViaIdentityExpanded, ReimageViaIdentityManagedClusterExpanded
 Aliases:
 
 Required: False
@@ -404,3 +400,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
+
